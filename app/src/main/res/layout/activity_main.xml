@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pkr.countit.MainActivity">
+
+    <TextView
+        android:id="@+id/proximityCountText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:text="0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:gravity="center"
+        android:background="#0793a5"
+        android:textColor="#ffffff"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:onClick="reset"/>
+
+    <TextView
+        android:id="@+id/touchCountText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:text="0"
+        android:onClick="touchFunc"/>
+
+</LinearLayout>
